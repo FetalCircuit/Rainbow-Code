@@ -1,11 +1,7 @@
-// Daniel Shiffman
-// http://codingtra.in
-// http://patreon.com/codingtrain
-
 (function() {
-  console.log("bookmarklet starting");
-  let paragraphs = document.getElementsByTagName('p');
-  for (let i = 0; i < paragraphs.length; i++) {
-    paragraphs[i].innerHTML = 'puppy';
+  var elts = document.getElementsByTagName('p');
+  for (var i = 0; i < elts.length; i++) {
+    elts[i].style['background-color'] = 'red';
+    elts[i].style['font-family'] = 'UnifrakturMaguntia', cursive;
   }
 })();
